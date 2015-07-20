@@ -1,0 +1,60 @@
+body {
+  padding-bottom: 40px;
+  background-color: #222;
+  font-family: 'Amatic SC', cursive;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+a {
+  color: white;
+}
+
+.navbar-inverse .navbar-brand, p, .navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+
+.container.mypics {
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  background: url(ansel_adams-3.jpg) no-repeat center center;
+  background-size: cover;
+  height: 600px;
+  color: white;
+}
+
+.jumbotron.upload {
+  background: url(clouds.jpg) no-repeat top center;
+  background-size: cover;
+  height:260px;
+  padding-top: 20px;
+}
+
+ 
+/* Poloroid */
+figure.polaroid img {
+  height: 200px;
+}
+
+.polaroid {
+  float: left;
+  margin: 0 15px 15px 0;
+  padding: 5px 5px 5px 5px;
+  background-color: white;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  color: gray;
+}
+
+figcaption {
+  padding-top: 5px;
+}
+
+
+

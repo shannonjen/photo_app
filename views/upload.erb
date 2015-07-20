@@ -1,0 +1,25 @@
+ <div class="jumbotron upload">
+    <div class="container">
+    	<h2>Welcome to your upload page, <%= @user.fname %></h2>
+
+			<form method="POST" action="/upload" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="exampleInputFile">Upload Image</label>
+				  <input type="file" name='myfile' id="exampleInputFile" accept="image" capture="camera">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" name="mycaption" placeholder="Caption">
+				</div>
+			  <input type="submit" class="btn btn-default" value='Upload'>
+			</form>
+		</div>
+  </div> 
+	
+	<div class="container mypics">
+ 	<% @pics.each do |pic| %>
+ 		<figure class ="polaroid">
+ 			<img src= <%= pic.image_url %>>
+  		<figcaption><%= pic.caption %></figcaption>
+		</figure>
+	<% end %> 
+	</div>
