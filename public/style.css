@@ -1,5 +1,6 @@
 body {
-  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 10px;
   background-color: #222;
   font-family: 'Amatic SC', cursive;
 }
@@ -13,10 +14,13 @@ a {
   color: white;
 }
 
+}
 .navbar-inverse .navbar-brand, p, .navbar-inverse .navbar-nav>li>a {
   color: white;
 }
-
+h1,p,h2,h3,h4 {
+  color: white;
+}
 
 .container.mypics {
   margin-bottom: 20px;

@@ -26,6 +26,16 @@ get'/sign-in' do
   erb :signin
 end
 
+get '/pic/:id' do
+  @post = Post.find(params[:id])
+  @caption = @post.caption
+  if @post
+    erb :pic
+  else
+    redirect '/'
+  end
+end
+
 
 
 post '/' do

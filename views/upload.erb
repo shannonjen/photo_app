@@ -1,5 +1,6 @@
- <div class="jumbotron upload">
+ 
     <div class="container">
+    <div class="jumbotron upload">
     	<h2>Welcome to your upload page, <%= @user.fname %></h2>
 
 			<form method="POST" action="/upload" enctype="multipart/form-data">
@@ -18,7 +19,7 @@
 	<div class="container mypics">
  	<% @pics.each do |pic| %>
  		<figure class ="polaroid">
- 			<img src= <%= pic.image_url %>>
+ 			<a href=<%="/pic/"+pic.id.to_s%>><img src= <%= pic.image_url %>></a>
   		<figcaption><%= pic.caption %></figcaption>
 		</figure>
 	<% end %> 

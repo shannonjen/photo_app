@@ -1,0 +1,7 @@
+<div class="container pic">
+<h1><%=@caption%></h1>
+<h2><%= @post.location %></h2>
+<h2><%= @post.created_at.year %></h2>
+<img src= <%= "/"+@post.image_url %>>
+
+</br>
